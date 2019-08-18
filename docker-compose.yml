@@ -1,0 +1,21 @@
+version: '2'
+services:
+  kitawo-telegram:
+    volumes:
+      - ./server:/home/app/src
+    build: .
+    command: node src/server.js
+    expose:
+      - 3000
+    environment:
+      VIRTUAL_PORT: 3000
+      VIRTUAL_HOST: "${TELEGRAM_VIRTUAL_HOST}"
+      LETSENCRYPT_HOST: "${TELEGRAM_LETSENCRYPT_HOST}"
+      LETSENCRYPT_EMAIL: "${TELEGRAM_LETSENCRYPT_EMAIL}"
+      PRISMA_SECRET: "${PRISMA_SECRET}"
+
+networks:
+  default:
+    external:
+      name: nginx-net
+
