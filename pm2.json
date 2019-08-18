@@ -1,6 +1,6 @@
 {
   "name": "jjbg-kitawo",
-  "script": "server/index.js",
+  "script": "src/index.js",
   "instances": "1",
   "node_args": "-r esm",
   "env": {

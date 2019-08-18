@@ -1,10 +1,7 @@
 version: '2'
 services:
   kitawo-telegram:
-    volumes:
-      - ./server:/home/app/src
     build: .
-    command: node src/server.js
     expose:
       - 3000
     environment:
