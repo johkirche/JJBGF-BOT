@@ -15,6 +15,7 @@ export const Telegram = () => {
   const bot = new Telegraf(process.env.TELEGRAM_SECRET);
   bot.telegram.setWebhook("https://telegram.jjbg-kitawo.de/");
   bot.use(session({ ttl: 10 }));
+  console.log("secret", process.env.TELEGRAM_SECRET);
 
   const replyRoomChoose = ctx =>
     ctx.reply(
