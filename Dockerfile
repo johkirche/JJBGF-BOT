@@ -1,14 +1,15 @@
-FROM node:10.5.0
+FROM keymetrics/pm2:latest-alpine
 
-# WORKDIR /opt/app
+# Bundle APP files
+COPY server server/
+COPY package.json .
+COPY pm2.json .
 
-# Install yarn from the local .tgz
-# RUN mkdir -p /opt
-# ADD latest.tar.gz /opt/
-# ENV PATH "$PATH:/opt/yarn/bin"
+# Install app dependencies
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install --production
 
-WORKDIR /home/app
-
-# Install packages using Yarn
-ADD ./server/package.json ./server/yarn.lock ./
-RUN cd ./ && yarn
+# Show current folder structure in logs
+RUN ls -al -R
+RUN pwd
+CMD [ "pm2-runtime", "start", "pm2.json"]
