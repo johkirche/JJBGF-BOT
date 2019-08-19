@@ -15,7 +15,6 @@ export const Telegram = () => {
   const bot = new Telegraf(process.env.TELEGRAM_SECRET);
   bot.telegram.setWebhook(process.env.TELEGRAM_WEBHOOK);
   bot.use(session({ ttl: 10 }));
-  console.log("secret", process.env.TELEGRAM_WEBHOOK);
 
   const replyRoomChoose = ctx =>
     ctx.reply(
@@ -28,15 +27,11 @@ export const Telegram = () => {
       )
     );
 
-  bot.on("message", ctx => {
-    ctx.reply("HELLOO");
-  });
-
   bot.hears("hallo", ctx => {
     ctx.reply("hi");
     console.log(ctx.from);
   });
-  bot.hears("🔍", ctx => ctx.reply("Suche"));
+
   bot.hears("jjbgf", ctx =>
     ctx.reply("Johannische Jugend bedeutet glückliche Freizeit")
   );
