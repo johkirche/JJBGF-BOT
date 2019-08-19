@@ -224,9 +224,10 @@ escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
-esm@^3.0.77:
-  version "3.0.77"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.77.tgz#9c81e3f4c8e422b86d525d0d365665825af8dfae"
+esm@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.1.0.tgz#89eb950b3f04b691b12f96a0d9c8de93039a1a26"
+  integrity sha512-r4Go7Wh7Wh0WPinRXeeM9PIajRsUdt8SAyki5R1obVc0+BwtqvtjbngVSSdXg0jCe2xZkY8hyBMx6q/uymUkPw==
 
 etag@~1.8.1:
   version "1.8.1"
