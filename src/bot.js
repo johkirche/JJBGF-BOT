@@ -5,7 +5,7 @@ const Extra = require("telegraf/extra");
 
 const { Prisma } = require("prisma-binding");
 const prisma = new Prisma({
-  typeDefs: "./generated/prisma.graphql",
+  typeDefs: "src/generated/prisma.graphql",
   endpoint: "https://api.jjbg-kitawo.de",
   secret: process.env.PRISMA_SECRET
 });
