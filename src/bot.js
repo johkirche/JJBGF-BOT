@@ -28,6 +28,10 @@ export const Telegram = () => {
       )
     );
 
+  bot.on("message", ctx => {
+    ctx.reply("HELLOO");
+  });
+
   bot.hears("hallo", ctx => {
     ctx.reply("hi");
     console.log(ctx.from);
