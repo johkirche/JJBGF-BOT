@@ -46,6 +46,7 @@ export const Telegram = () => {
       ctx.from.username === "T_auriel" ||
       ctx.from.username === "Derfedder" ||
       ctx.from.username === "SophieNadine" ||
+      ctx.from.username === "LauraRasen" ||
       ctx.from.username === "ClaerchenSoSa"
     ) {
       return replyRoomChoose(ctx);
