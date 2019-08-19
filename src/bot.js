@@ -69,14 +69,14 @@ export const Telegram = () => {
   bot.action("room::fs", async ctx => {
     ctx.session.room = "fs";
     ctx.session.room_name = "Friedensstadt";
-    ctx.session.room_id = "cjky2mqob00080765ysg38gq9";
+    ctx.session.room_id = "cjz59vg7l001008241wmo5bba";
     makeOpenClosed(ctx);
   });
 
   bot.action("room::smh", async ctx => {
     ctx.session.room = "smh";
     ctx.session.room_name = "St. Michaels Heim";
-    ctx.session.room_id = "cjky2sgv2000h0765njxdgzgl";
+    ctx.session.room_id = "cjzfmmb9c000m0738j2ams68z";
     makeOpenClosed(ctx);
   });
 
