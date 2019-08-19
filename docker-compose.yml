@@ -12,7 +12,7 @@ services:
       PRISMA_SECRET: "${PRISMA_SECRET}"
       TELEGRAM_SECRET: "${TELEGRAM_SECRET}"
       TELEGRAM_WEBHOOK: "${TELEGRAM_WEBHOOK}"
-
+      TELEGRAM_SECRET_PATH: "${TELEGRAM_SECRET_PATH}"
 networks:
   default:
     external:
