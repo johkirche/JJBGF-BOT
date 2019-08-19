@@ -13,7 +13,7 @@ const prisma = new Prisma({
 export const Telegram = () => {
   console.log("online");
   const bot = new Telegraf(process.env.TELEGRAM_SECRET);
-  bot.telegram.setWebhook("https://telegram.jjbg-kitawo.de/");
+  bot.telegram.setWebhook(process.env.TELEGRAM_WEBHOOK);
   bot.use(session({ ttl: 10 }));
   console.log("secret", process.env.TELEGRAM_SECRET);
 
