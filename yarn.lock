@@ -275,7 +275,7 @@ escape-html@~1.0.3:
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
-esm@^3.1.0:
+esm@^3.2.25:
   version "3.2.25"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
@@ -303,7 +303,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-express@^4.16.3:
+express@^4.17.1:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
@@ -425,12 +425,6 @@ graphql-tools@4.0.5:
   integrity sha512-6uQadiRgnpnSS56hdZUSvFrVcQ6OF9y6wkxJfKquFtHlnl7+KSuWwSJsdwiK1vybm1HgcdbpGkCpvhvsVQ0UZQ==
   dependencies:
     iterall "^1.2.2"
-
-graphql@^0.13.2:
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
-  dependencies:
-    iterall "^1.2.1"
 
 http-errors@1.7.2:
   version "1.7.2"
@@ -823,7 +817,7 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-prisma-binding@^2.1.0:
+prisma-binding@^2.3.15:
   version "2.3.15"
   resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-2.3.15.tgz#a64e2d00e765b2acdc14162aab6949e70561444e"
   integrity sha512-FIY2vFG5HWEolzKK7fxPOfYPC1F+qnnsl2zUUlgmRNghqCvWI7AnxZqUSaUNQET5uqEZPn1bknKVtPOXpq7Khg==
@@ -1055,7 +1049,7 @@ symbol-observable@^1.0.4:
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
-telegraf@^3.21.2:
+telegraf@^3.32.0:
   version "3.32.0"
   resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.32.0.tgz#70ec304b9c8645f8988924ebe90e5c00ee46ddbb"
   integrity sha512-5ZHiovyuG1rVLygJjaqf57wDt8e1nijAinKXCxN1tyUZ4BcrkZW/z5rVTEXA+KegpFbWxKKv3KnJwUJrKDqD0Q==
