@@ -15,7 +15,7 @@ export const Telegram = () => {
   const bot = new Telegraf(process.env.TELEGRAM_SECRET);
   bot.telegram.setWebhook(process.env.TELEGRAM_WEBHOOK);
   bot.use(session({ ttl: 10 }));
-  console.log("secret", process.env.TELEGRAM_SECRET);
+  console.log("secret", process.env.TELEGRAM_WEBHOOK);
 
   const replyRoomChoose = ctx =>
     ctx.reply(
