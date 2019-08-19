@@ -5,10 +5,10 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.1.0",
-    "esm": "^3.1.0",
-    "express": "^4.16.3",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
     "graphql": "^0.13.2",
-    "prisma-binding": "^2.1.0",
-    "telegraf": "^3.21.2"
+    "prisma-binding": "^2.3.15",
+    "telegraf": "^3.32.0"
   }
 }
