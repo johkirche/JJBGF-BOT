@@ -52,7 +52,7 @@ export const Bot = () => {
     ctx.reply("admin: " + status);
   });
 
-  telegraf.command("reload", ctx => {
+  telegraf.command("reload", async ctx => {
     const admin = await isAdmin(ctx.from.id);
     if (!admin) {
       ctx.reply("Diese Funktion ist nur für eingetragene Jugendleiter! 🤗");
