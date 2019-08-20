@@ -39,6 +39,9 @@ export const Telegram = () => {
   bot.on("edited_channel_post", ctx => {
     console.log(ctx.from, ctx.chat);
   });
+  bot.on("new_chat_members", ctx => {
+    console.log(ctx.from, ctx.chat);
+  });
 
   bot.hears("jjbgf", ctx =>
     ctx.reply("Johannische Jugend bedeutet glückliche Freizeit")
