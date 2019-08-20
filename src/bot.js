@@ -47,9 +47,10 @@ export const Bot = () => {
 
   telegraf.use(session({ ttl: 10 }));
 
-  telegraf.command("amiadmin", async ctx => {
-    const status = await isAdmin(ctx.from.id);
-    ctx.reply("admin: ", status);
+  telegraf.command("amiadmin", ctx => {
+    isAdmin(ctx.from.id).then(status => {
+      ctx.reply("admin: ", status);
+    });
   });
 
   telegraf.command("reload", ctx => {
