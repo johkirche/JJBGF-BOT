@@ -14,6 +14,7 @@ services:
       TELEGRAM_SECRET: "${TELEGRAM_SECRET}"
       TELEGRAM_WEBHOOK: "${TELEGRAM_WEBHOOK}"
       TELEGRAM_SECRET_PATH: "${TELEGRAM_SECRET_PATH}"
+      CHAT_ID: "${CHAT_ID}"
 networks:
   default:
     external:
