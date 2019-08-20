@@ -1,5 +1,5 @@
 import express from "express";
-import { Telegram } from "./bot";
+import { Bot } from "./bot";
 require("dotenv").config();
 
 // Constants
@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.use(Telegram().webhookCallback(process.env.TELEGRAM_SECRET_PATH));
+app.use(Bot().webhookCallback(process.env.TELEGRAM_SECRET_PATH));
 
 app.listen(PORT, () => {
   console.log(`Running on ${PORT}`);
