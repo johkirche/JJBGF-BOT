@@ -37,9 +37,9 @@ export const Bot = () => {
           update: { first_name, last_name, username, status }
         });
 
-        ctx.reply("Processing " + first_name + " " + username);
+        ctx.reply("✅ " + first_name + " " + username);
       });
-      ctx.reply("Done");
+      ctx.reply("🏁 Fertig");
     });
   };
 
@@ -53,10 +53,12 @@ export const Bot = () => {
   });
 
   telegraf.command("reload", ctx => {
-    if (ctx.from.username != "mahnouel") {
-      ctx.reply("Diese Funktion ist nur für Manuel! 👷");
+    const admin = await isAdmin(ctx.from.id);
+    if (!admin) {
+      ctx.reply("Diese Funktion ist nur für eingetragene Jugendleiter! 🤗");
       return;
     }
+
     sync(ctx);
   });
 
