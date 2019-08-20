@@ -70,23 +70,14 @@ export const Bot = () => {
         ])
       )
     );
-  telegraf.command("room", ctx => {
-    if (
-      ctx.from.username === "mahnouel" ||
-      ctx.from.username === "MrMaeffy" ||
-      ctx.from.username === "BettyNo" ||
-      ctx.from.username === "JohannesFr" ||
-      ctx.from.username === "Elias3" ||
-      ctx.from.username === "T_auriel" ||
-      ctx.from.username === "Derfedder" ||
-      ctx.from.username === "SophieNadine" ||
-      ctx.from.username === "LauraRasen" ||
-      ctx.from.username === "ClaerchenSoSa"
-    ) {
-      return replyRoomChoose(ctx);
-    } else {
+  telegraf.command("room", async ctx => {
+    const admin = await isAdmin(ctx.from.id);
+    if (!admin) {
       ctx.reply("Diese Funktion ist nur für eingetragene Jugendleiter! 🤗");
+      return;
     }
+
+    return replyRoomChoose(ctx);
   });
 
   const makeOpenClosed = ctx => {
