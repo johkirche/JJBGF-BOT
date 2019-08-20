@@ -33,6 +33,13 @@ export const Telegram = () => {
     console.log(ctx.from);
   });
 
+  bot.on("edited_message", ctx => {
+    console.log(ctx.from, ctx.chat);
+  });
+  bot.on("edited_channel_post", ctx => {
+    console.log(ctx.from, ctx.chat);
+  });
+
   bot.hears("jjbgf", ctx =>
     ctx.reply("Johannische Jugend bedeutet glückliche Freizeit")
   );
