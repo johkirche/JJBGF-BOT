@@ -19,7 +19,7 @@ export const Bot = () => {
   const isAdmin = id => {
     return prisma.exists.User({
       id,
-      OR: [{ status: "creator" }, { status: "admin" }]
+      OR: [{ status: "creator" }, { status: "administrator" }]
     });
   };
 
